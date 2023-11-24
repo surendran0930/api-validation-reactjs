@@ -114,30 +114,31 @@ return false;
       return true;
       // return
     }
-if (getvalues.tittle == "" || getvalues.companyName.length < 3) {
-    return true;
-  }
-    if (getvalues.companyName == "" || getvalues.companyName.length < 3) {
-      return true;
-    }
-    if (getvalues.industry == "" || getvalues.industry.length < 3) {
-      return true;
-    }
-    if (getvalues.location == "" || getvalues.location.length < 3) {
-      return true;
-    }
-    if (getvalues.remoteType == "" || getvalues.remoteType.length < 3) {
-      return true;}
-     else return false;
+// if (getvalues.tittle == "" || getvalues.companyName.length < 3) {
+//     return true;
+//   }
+//     if (getvalues.companyName == "" || getvalues.companyName.length < 3) {
+//       return true;
+//     }
+//     if (getvalues.industry == "" || getvalues.industry.length < 3) {
+//       return true;
+//     }
+//     if (getvalues.location == "" || getvalues.location.length < 3) {
+//       return true;
+//     }
+//     if (getvalues.remoteType == "" || getvalues.remoteType.length < 3) {
+//       return true;}
+//      else return false;
   };
 
   // modal exceed function
 
-  const modalExit =()=>{
+  // const modalExit =()=>{
     
-      secOpenForm({ ...openForm, form1: false, form2: false })
     
-  }
+  //     secOpenForm({ ...openForm, form1: false, form2: false })
+    
+  // }
 
   return (
     <div
@@ -268,10 +269,10 @@ if (getvalues.tittle == "" || getvalues.companyName.length < 3) {
                 onClick={() => {
                   if (errorValidation() === false) {
                     openForm2(true);
-                    console.log("jiiii");
+                    // console.log("jiiii");
                   } else {
                     errorValidation();
-                    console.log("hiiiiiiiiii");
+                    // console.log("hiiiiiiiiii");
                   }
                 }}
               />

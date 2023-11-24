@@ -296,6 +296,21 @@ setCallApi(data)
                   applyType: "",
 
                   })
+                  console.log(errors,"hiiiiiiiiiiiiiiiiii");
+                  setErrors({
+                    tittle:"",
+                    companyName:"",
+                    industry:"",
+                    location:"",
+                    remoteType:"",
+                    minimumExperience:false,
+                    maximumExperience:false,
+                    minimumSalary:false,
+                    maximumSalary:false,
+                    applyType:false
+                    
+
+                  })
                 }
                  
                   
@@ -327,6 +342,14 @@ setCallApi(data)
                   totalEmpolyee: 0,
                   applyType: "",
 
+                  })
+                  setErrors({
+                    
+                    minimumExperience:"",
+                    maximumExperience:"",
+                    minimumSalary:"",
+                    maximumSalary:"",
+                    applyType:false
                   })
                 }
                 }
