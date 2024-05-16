@@ -160,7 +160,7 @@ const Form2 = ({
         <div className="w-[513px] flex flex-col gap-6">
           <div className="flex justify-between">
             <div>
-              <p>Create a job</p>
+              <p data-cy="cy-header-text-form2">Create a job</p>
             </div>
             <div>
               <p>Step 2</p>
@@ -181,6 +181,7 @@ const Form2 = ({
                   type="number"
                   // errValidation={"Enter mininmum exprenice"}
                   errValidation={errors?.minimumExperience}
+                  datacy="cy-input-experience-min"
                 />
               </div>
             </div>
@@ -194,6 +195,8 @@ const Form2 = ({
                 type="number"
                 // errValidation={"Enter Maximum Experience"}
                 errValidation={errors?.maximumExperience}
+                datacy="cy-input-experience-max"
+
               />
             </div>
           </div>
@@ -208,6 +211,8 @@ const Form2 = ({
                 type="number"
                 // errValidation={"Enter Minimum Empolyee"}
                 errValidation={errors?.minimumSalary}
+                datacy="cy-input-salary-min"
+
               />
             </div>
             <div className="w-[50%]  flex flex-col justify-end">
@@ -220,6 +225,8 @@ const Form2 = ({
                 type="number"
                 // errValidation={"Enter Total Empolyee"}
                 errValidation={errors?.maximumSalary}
+                datacy="cy-input-salary-max"
+
               />
             </div>
           </div>
@@ -236,6 +243,7 @@ const Form2 = ({
                 type="number"
                 // errValidation={"Enter Total Empolyee"}
                 errValidation={errors?.totalEmpolyee}
+                datacy="cy-input-total-employee"
               />
             </div>
           </div>
@@ -285,6 +293,7 @@ const Form2 = ({
               {console.log(btnState2, "hihii")}
               <Button
                 btn="Submit"
+                dataCy="cy-submit-button"
                 disabled={validationForm2()}
                 state={btnState2 ? "" : "primary"}
                 onClick={() => {

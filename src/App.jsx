@@ -72,8 +72,8 @@ function App() {
 
   const handleChange = (e) => {
     const regex = /^[A-Za-z]+$/;
-    const result = regex.test(e.target.value);
-    console.log(result);
+    // const result = regex.test(e.target.value);
+    // console.log(result);
     const { name, value } = e.target;
 
     setGetValues((prev) => ({
@@ -324,6 +324,7 @@ setCallApi(data)
                 // validation={validation}
                 errors={errors}
                 setErrors={setErrors}
+                
               />
               <Form2
              callApi={handleCallApi}
@@ -378,7 +379,7 @@ setCallApi(data)
               <h1>SURENDRAN.K</h1>
             </div>
             <div>
-              <Button btn="Apply Card" onClick={openForm1} />
+              <Button btn="Apply Card" onClick={openForm1} dataCy="cy-apply-button"/>
             </div>
           </div>
           <div className=" flex flex-wrap  bg-[#D8D8D8]  p-8 gap-8 justify-center align-center ">

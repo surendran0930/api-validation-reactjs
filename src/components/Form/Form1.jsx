@@ -151,7 +151,7 @@ return false;
       >
         <div className="w-[513px] flex flex-col gap-6">
           <div className="flex justify-between ">
-            <div>
+            <div data-cy='cy-header-text'>
               <p>Create a job</p>
             </div>
             <div>
@@ -172,6 +172,8 @@ return false;
                 name="tittle"
                 errValidation={errors?.tittle}
                 errorStates={errors?.tittle}
+                datacy="cy-input-job-Title"
+                dataerror="cy-job-title-error"
               />
             </div>
             {/* {console.log(errors)}
@@ -195,6 +197,10 @@ return false;
                 value={getvalues.companyName}
                 errValidation={errors?.companyName}
                 errorStates={errors?.companyName}
+                datacy="cy-input-Company-Name"
+                dataerror="cy-company-Name-error"
+
+
               />
             </div>
           </div>
@@ -212,6 +218,9 @@ return false;
                 name="industry"
                 errValidation={errors?.industry}
                 errorStates={errors?.industry}
+                datacy="cy-input-Industry"
+                dataerror="cy-industry-error"
+
               />
             </div>
           </div>
@@ -230,6 +239,10 @@ return false;
                   name="location"
                   errValidation={errors?.location}
                   // errorStates={errors?.location}
+                datacy="cy-input-Location"
+                dataerror="cy-Location-error"
+
+
                 />
               </div>
             </div>
@@ -247,6 +260,10 @@ return false;
                   name="remoteType"
                   errValidation={errors?.remoteType}
                   errorStates={errors?.remoteType}
+                datacy="cy-input-Remote-type"
+                dataerror="cy-remoteType-error"
+
+
                 />
                 {/* {errors.remoteType === true ? (
                   <p className="text-red-600">Enter Correct Type</p>
@@ -265,6 +282,7 @@ return false;
                 type="click"
                 btn="Next"
                 disabled={validationForm1()}
+                dataCy="cy-next-button"
                 state={btnState ? "" : "primary"}
                 onClick={() => {
                   if (errorValidation() === false) {

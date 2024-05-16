@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Button({type, onClick,btn,disabled,state}) {
+function Button({type, onClick,btn,disabled,state,dataCy}) {
 
 const handleClass=(state)=>{
   let temp= "w-[118px] h-[40px] bg-[#1597e4] text-center shadow text-white rounded-md "
@@ -13,7 +13,7 @@ const handleClass=(state)=>{
  
   return (
     <div>
-      <button type={type} onClick={onClick} disabled={disabled} className={handleClass(state)}>{btn}
+      <button type={type} onClick={onClick} disabled={disabled} className={handleClass(state)} data-cy={dataCy}>{btn}
        
       </button>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ type, checked,placeholder = "", name = "", id ,onChange,value,errValidation,errorStates}) => {
+const Input = ({ type, checked,placeholder = "", name = "", id ,onChange,value,errValidation,errorStates,datacy,dataerror}) => {
 
   
   return (
@@ -16,8 +16,9 @@ const Input = ({ type, checked,placeholder = "", name = "", id ,onChange,value,e
           className="px-3 py-2 w-full rounded-[5px] border-solid border-2"
           value={value}
           checked={checked}
+          data-cy={datacy}
         />
-       <p className="text-red-600">{errValidation?errValidation:""}</p>
+       <p data-cy={dataerror} className="text-red-600">{errValidation?errValidation:""}</p>
       </div>
     </div>
   );
